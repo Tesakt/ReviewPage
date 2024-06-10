@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <div class = "container-fluid text-center text-format bg-image">
+            <div class="row justify-content-center gx-0">
+                <div class="title col-sm-6 g-4">
+                    <a class="internal-link" href="index.html">
+                    <h2 class = "text-center">
+                        Reviews of stories
+                    </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center gx-0">
+                <div class="col-sm-6 text-center g-4">
+                    <button onclick="popUpImage()" class="btn btn-dark bottom-buffer">View/Hide Book Cover</button>
+                    <div class="image-container" style="display: none;">
+                        <img src="https://m.media-amazon.com/images/I/91NOCLnl8lL.jpg" class="cover-image" alt="Cover image of The First Fifteen Lives of Harry August by Claire North">
+                    <hr>
+                    </div>
+                        <script>
+                        function popUpImage() {
+                            var imageContainer = document.querySelector(".image-container");
+                            if (imageContainer.style.display === "block") {
+                                imageContainer.style.display = "none";
+                            } else {
+                                imageContainer.style.display = "block";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center gx-0">
+
+                <div class="col-sm-7 text-justify content ps-4 pe-4 pt-4 g-4">
+                    <div class="text-center">
+                        <h4>
+                            The First Fifteen Lives of Harry August
+                        </h4>
+                        <i>by Claire North</i><br>
+                    </div>
+                    <p>
+                        <br>
+                        In "The First Fifteen Lives of Harry August," Harry August is a man who is born again and again with the knowledge of his previous lives. 
+                        He is an Ouroboran, also known as a kalachakra, and is destined to repeat his life over and over again.<br><br>
+                        The story begins in 1919, when Harry is born in the women's washroom of Berwick-upon-Tweed station. 
+                        He leads an unremarkable life and dies in hospital in Newcastle-upon-Tyne in 1989. 
+                        But then, he finds himself reborn again in 1919, gaining the knowledge of his earlier life at an early age.<br><br>
+                        As he grows older, Harry learns that he is not alone and is soon contacted by the Cronus Club, an organization of similarly affected individuals. 
+                        The Cronus Club looks after Harry in his childhood in subsequent lives, and he eventually goes on to study biology, chemistry, and physics. 
+                        With knowledge from his previous lives, he easily becomes a professor of physics at the University of Cambridge, where he meets Vincent Rankis, an intelligent undergraduate student.<br><br>
+                        Vincent and Harry become friends and talk about theoretical physics and the nature of time. 
+                        Eventually, they both realize that they are Ouroborans and must confront the impending end of the world and the role they play in its destruction. 
+                        Other members of the Cronus Club inform Harry that the world is ending and that with each life he lives, the end becomes closer.<br><br>
+                        Harry sets out on a quest to find the source of the impending apocalypse and prevent it from happening. 
+                        Along the way, he must confront the consequences of his actions and the ways in which his choices can shape the world around him.<br><br>
+                        One of the things I loved most about this book was the way it explored the concept of time and the nature of reality. 
+                        The idea that Harry is doomed to repeat his life over and over again raises all sorts of interesting questions about determinism, free will, and the interconnectedness of all things. 
+                        The book is also a subtle study of friendship, love, and the fluid complexity of existence.<br><br>
+                        Overall, I highly recommend "The First Fifteen Lives of Harry August" to anyone who enjoys science fiction and speculative fiction. 
+                        It's a thought-provoking and engaging novel that will keep you turning the pages long into the night. 
+                        Give it a read and see for yourself!
+                        <hr>
+                </div>
+            </div>
+
+            <div class="row justify-content-center normal-click gx-0">
+
+                <div class="col-md-2 col-4 text-start g-4">
+                    <div class="previous">
+                        <form action="index.html">
+                            <button type="submit" class="btn btn-dark">Back</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center gy-4">
+                    <form action="index.html">  
+                        <button type="submit" class="btn btn-dark">Back to main page</button>
+                    </form>
+                </div>
+
+                <div class="col-md-2 col-3 text-end bottom-buffer g-4">
+                    <div class="next">
+                        <form action="Mortal-Journey.html">
+                            <button type="submit" class="btn btn-dark">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

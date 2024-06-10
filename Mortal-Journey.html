@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <body>
+        <div class = "container-fluid text-center text-format bg-image">
+            <div class="row justify-content-center gx-0">
+                <div class="title col-sm-6 g-4">
+                    <a class="internal-link" href="index.html">
+                    <h2 class = "text-center">
+                        Reviews of stories
+                    </h2>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center gx-0">
+                <div class="col-sm-6 text-center g-4">
+                    <button onclick="popUpImage()" class="btn btn-dark bottom-buffer">View/Hide Book Cover</button>
+                    <div class="image-container" style="display: none;">
+                        <img src="https://cdn.novelupdates.com/images/2015/09/record-of-mortal-cultivating-to-immortal.jpg" class="cover-image" 
+                        alt="Cover image of A Record of a Mortal’s Journey to Immortality by Wang Yu (忘语)">
+                    <hr>
+                    </div>
+                        <script>
+                        function popUpImage() {
+                            var imageContainer = document.querySelector(".image-container");
+                            if (imageContainer.style.display === "block") {
+                                imageContainer.style.display = "none";
+                            } else {
+                                imageContainer.style.display = "block";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            
+            <div class="row justify-content-center gx-0">
+
+                <div class="col-sm-7 text-justify content ps-4 pe-4 pt-4 g-4">
+                    <div class="text-center">
+                        <h4>
+                            A Record of a Mortal’s Journey to Immortality
+                        </h4>
+                        <i>by Wang Yu (忘语)</i><br>
+                    </div>
+                    <p>
+                        <br>
+                        Han Li, a poor and ordinary boy from a remote village, is taken in as an Unofficial Disciple by a minor sect from Jiang Hu. 
+                        Despite his mediocre aptitude, Han Li is determined to establish a foothold for himself in the sect and embarks on the treacherous path of cultivation. 
+                        Along the way, he faces powerful enemies and overcomes numerous challenges, but his determination and will to succeed never wavers. 
+                        Can Han Li achieve immortality and make a name for himself in the world of Jiang Hu?<br><br>
+                        As a casual reader, I must say that I am thoroughly enjoying this book. 
+                        Han Li is a fantastic main character, and I love how he is not your typical overpowered MC. 
+                        Instead, he is intelligent and knows his limits, which makes him all the more relatable. 
+                        His slow and steady progression is refreshing, and I appreciate how he doesn't shy away from using rare and extinct treasures to help him along the way.<br><br>
+                        One thing that stands out to me is how Han Li is not afraid to employ caution in his fights. 
+                        He doesn't rush into battle without a plan, and this makes him a truly formidable opponent. 
+                        Additionally, I appreciate how the novel doesn't have any glaring plot holes or deus ex-machina moments, which makes for a much more enjoyable reading experience.<br><br>
+                        One of the things that stands out to me about this author is their ability to always provide satisfying conclusions to their plots. 
+                        In many books, it's common for the author to leave things hanging without providing a proper resolution. 
+                        This can be frustrating for readers who have invested time and emotional energy into the story and its characters.
+                        However, this author always ensures that their plots are properly concluded. 
+                        They don't shy away from tying up loose ends and providing satisfying endings for their characters. 
+                        This attention to detail and commitment to storytelling makes for a much more enjoyable reading experience, and it's one of the reasons why I continue to be a fan of this author's work.<br><br>
+                        Additionally, this ability to provide proper conclusions to their plots also adds a sense of credibility and reliability to the author's work. 
+                        As a reader, I know that I can trust this author to take me on a journey and provide a satisfying conclusion at the end. 
+                        This level of trust is important, and it's something that not all authors are able to achieve.<br><br>
+                        Overall, I highly recommend this book to anyone who is a fan of smart, well-written characters and high-quality fighting scenes. 
+                        Han Li is a true standout, and I can't wait to see what the future holds for him in the next book.
+                        <hr>
+                </div>
+            </div>
+
+            <div class="row justify-content-center normal-click gx-0">
+
+                <div class="col-md-2 col-4 text-start g-4">
+                    <div class="previous">
+                        <form action="Harry_August-review.html">
+                            <button type="submit" class="btn btn-dark">Back</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-3 text-center gy-4">
+                    <form action="index.html">  
+                        <button type="submit" class="btn btn-dark">Back to main page</button>
+                    </form>
+                </div>
+
+                <div class="col-md-2 col-3 text-end bottom-buffer g-4">
+                    <div class="next">
+                        <form action="Mother-of-learning.html">
+                            <button type="submit" class="btn btn-dark">Next</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

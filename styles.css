@@ -1,0 +1,127 @@
+.bg-image {
+    background-color: rgb(27, 40, 60);
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65), 
+            rgba(0, 0, 0, 0.65)
+        ), 
+        url("background.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    min-height: 100vh;
+}
+
+.cover-image {
+    width: 50%;
+}
+
+.text-format {
+    color:rgba(255, 255, 255, 0.85);
+}
+
+.title {
+    pointer-events: auto;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    border-style: dashed;
+    border-width: 2px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.2)
+    );
+}
+
+.bottom-buffer { 
+    margin-bottom: 2%; 
+}
+
+.content {
+    border-radius: 25px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+    );
+}
+
+.content:hover {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    );
+}
+
+.external-link {
+    text-decoration: none;
+    color:rgba(189, 192, 255, 0.8);
+}
+
+.external-link:hover {
+    color:rgba(169, 172, 235, 0.6);
+}  
+
+.internal-link {
+    text-decoration: none;
+    color:rgba(234, 246, 255, 0.875);
+}
+
+.internal-link:hover {
+    color:rgba(225, 237, 246, 0.6);
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+ul {
+    list-style-position: inside;
+  }
+
+.text-justify {
+    text-align: justify;
+}
+
+.btn-dark {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    border-style: dashed;
+    border-width: 2px;
+}
+
+.btn-dark:hover {
+    color:rgba(235, 235, 235, 0.9);
+    background-color:  rgb(0, 0, 0);    
+    border-color: rgba(179, 179, 179, 0.9);
+    border-style: solid;
+}
+
+@media (max-width: 768px) {
+    .content {
+        font-size: 1em;
+    }
+
+    .previous {
+        text-align: center;
+    }
+
+    .next {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cover-image {
+        width: 95%;
+    }
+}
+
+/* Temporary border fro visibility */
+
+/* div {
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+} */
